@@ -62,6 +62,7 @@ pipeline{
 		 {
 		 echo env.WORKSPACE
 		 echo env.JOB_NAME
+		 echo env.NODE_NAME
 		 }
 					
 		
