@@ -58,7 +58,11 @@ pipeline{
 		steps{
 		
 		
+		 script
+		 {
 		 echo env.WORKSPACE
+		 echo env.JOB_NAME
+		 }
 					
 		
 		}
