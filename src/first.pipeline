@@ -61,8 +61,8 @@ pipeline{
 		 script
 		 {
 		 echo env.WORKSPACE
-		 echo env.JOB_NAME
-		 echo env.NODE_NAME
+		 echo "My JOB NAME IS"env.JOB_NAME
+		 echo "My Node is "env.NODE_NAME
 		 }
 					
 		
