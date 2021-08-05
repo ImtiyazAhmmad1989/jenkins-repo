@@ -1,0 +1,53 @@
+
+@Library('my-shared-lib) _
+pipeline{
+
+	agent{
+	node {
+		label 'agent1'
+		}
+	
+	}
+	
+	
+	stages{
+		stage('Parallel Run'){
+		
+		parallel{
+		
+		stage('m1'){
+		steps{
+		
+		script{
+		
+		util.m1()
+		
+		}
+		
+		}
+		
+		}
+		
+		stage('m2'){
+		steps{
+		
+		script{
+		
+		util.m2()
+		
+		}
+		
+		}
+		
+		}
+		
+		}
+		
+		
+		}
+	
+	
+	}
+
+
+}
