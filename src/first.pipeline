@@ -41,6 +41,19 @@ pipeline{
 		
 		}
 		
+		stage('m3'){
+		steps{
+		
+		
+		
+		echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+		
+		
+		
+		}
+		
+		}
+		
 		}
 		
 		
