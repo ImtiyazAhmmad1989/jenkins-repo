@@ -46,7 +46,6 @@ pipeline{
 		
 		
 		echo "My Jenkins URL Is --->" env.JENKINS_URL
-		echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
 		echo "My Build ID is ---> " env.BUILD_ID
 		
 		
