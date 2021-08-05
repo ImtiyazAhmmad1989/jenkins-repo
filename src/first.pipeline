@@ -46,9 +46,7 @@ pipeline{
 		
 		
 		 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-		 echo "Buid Id is "env.BUILD_ID
-		
-				
+					
 		
 		}
 		
