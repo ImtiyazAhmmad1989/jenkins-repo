@@ -19,7 +19,9 @@ pipeline{
 		steps{
 		
 		script{
-		
+		Jenkins.instance.allItems.findAll() 
+    { it instanceof AbstractProject }.each 
+    {println it.fullName}
 		util.m1()
 		
 		}
