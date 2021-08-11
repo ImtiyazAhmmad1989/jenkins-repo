@@ -5,9 +5,9 @@ def m1()
     println 'Util.m1() was called '
     
     
-Jenkins.instance.allItems.findAll() 
-    { it instanceof AbstractProject }.each 
-    {println it.fullName}
+ Jenkins.instance.getAllItems().each{
+   println it.fullName
+  }
 
 
 }
