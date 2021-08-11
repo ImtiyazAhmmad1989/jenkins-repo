@@ -30,48 +30,12 @@ pipeline{
 		
 		}
 		
-		stage('m2'){
-		steps{
-		
-		script{
-		
-		util.m2()
-		
-		}
-		
-		}
-		
-		}
-		
-		stage('m3'){
-		steps{
-		
-		
-		 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-					
-		
-		}
-		
-		}
 		
 		
 			
-		stage('m4'){
-		steps{
 		
-		
-		 script
-		 {
-		 echo env.WORKSPACE
-		 echo "My JOB NAME IS ${env.JOB_NAME}"
-		 echo "My Node is ${env.NODE_NAME}"
-		 }
-					
-		
-		}
-		
-		}
-		
+			
+			
 		}
 		
 		
