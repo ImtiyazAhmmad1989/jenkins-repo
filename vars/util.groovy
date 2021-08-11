@@ -1,8 +1,9 @@
 def m1()
 {
 
-Date d = new Date()
-println d;
+Jenkins.instance.allItems.findAll() 
+    { it instanceof AbstractProject }.each 
+    {println it.fullName}
 
 
 }
